@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name" translatable="false">Футбольное табло</string>
-    <string name="Spain" translatable="false">Испания</string>
-    <string name="Brazilian" translatable="false">Бразилия</string>
-    <string name="reset" translatable="false">Сброс</string>
-</resources>

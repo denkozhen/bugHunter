@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name" translatable="false">FootballScoreboard</string>
-    <string name="Spain" translatable="false">Spain</string>
-    <string name="Brazilian" translatable="false">Brazilian</string>
-    <string name="reset" translatable="false">Reset</string>
-
-</resources>
