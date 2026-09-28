@@ -156,7 +156,7 @@ export default function HunterLeadForm() {
       )}
 
       <button
-        className="w-full rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+        className="w-full rounded-xl bg-[#794525] px-5 py-3 font-semibold text-[#f4e8d0] transition hover:bg-[#9a572e] disabled:cursor-not-allowed disabled:opacity-60"
         disabled={isSubmitting}
         type="submit"
       >

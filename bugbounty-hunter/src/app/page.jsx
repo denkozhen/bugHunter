@@ -76,6 +76,22 @@ export default function Home() {
               Начать охоту <span aria-hidden="true" className="ml-3">→</span>
             </a>
             <a
+              className="inline-flex items-center justify-center gap-3 border-2 border-[#a8f0e7] bg-[#168c83] px-6 py-4 text-sm font-black uppercase tracking-[0.08em] text-white shadow-[5px_5px_0_#0d514c] transition hover:-translate-y-0.5 hover:bg-[#20a99d] hover:shadow-[6px_6px_0_#0d514c] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#a8f0e7]"
+              href="https://t.me/bugbounty_wanted"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                className="h-5 w-5 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21.8 4.2 18.5 20c-.25 1.12-.91 1.4-1.84.87l-5.08-3.75-2.45 2.36c-.27.27-.5.5-1.03.5l.36-5.17 9.4-8.5c.41-.36-.09-.56-.63-.2L5.6 13.4.57 11.82c-1.1-.35-1.12-1.1.23-1.63L20.47 2.6c.9-.33 1.69.22 1.33 1.6Z" />
+              </svg>
+              Следи за запуском в Telegram
+            </a>
+            <a
               className="inline-flex items-center px-5 py-4 text-sm font-bold text-[#e7d7bb] underline decoration-[#a77d4c] underline-offset-4 transition hover:text-white"
               href="#how-it-works"
             >

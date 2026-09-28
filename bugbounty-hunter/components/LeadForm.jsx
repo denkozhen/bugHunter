@@ -179,7 +179,7 @@ export default function LeadForm() {
       )}
 
       <button
-        className="w-full rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
+        className="w-full rounded-xl bg-[#794525] px-5 py-3 font-semibold text-[#f4e8d0] transition hover:bg-[#9a572e] disabled:cursor-not-allowed disabled:opacity-60"
         disabled={isSubmitting}
         type="submit"
       >
