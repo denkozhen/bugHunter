@@ -36,6 +36,7 @@ function validateForm(form) {
 
 export default function LeadForm() {
   const [form, setForm] = useState(initialForm);
+  const [hasConsented, setHasConsented] = useState(false);
   const [message, setMessage] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -48,6 +49,14 @@ export default function LeadForm() {
   async function handleSubmit(event) {
     event.preventDefault();
     setMessage(null);
+
+    if (!hasConsented) {
+      setMessage({
+        type: "error",
+        text: "Для отправки заявки необходимо согласиться на обработку персональных данных.",
+      });
+      return;
+    }
 
     const validationError = validateForm(form);
     if (validationError) {
@@ -73,6 +82,7 @@ export default function LeadForm() {
       }
 
       setForm(initialForm);
+      setHasConsented(false);
       setMessage({ type: "success", text: "Заявка успешно отправлена." });
     } catch (error) {
       setMessage({
@@ -166,6 +176,30 @@ export default function LeadForm() {
           <option value="300к+">300к+</option>
         </select>
       </div>
+
+      <label className="flex items-start gap-3 text-sm leading-6 text-slate-700">
+        <input
+          checked={hasConsented}
+          className="mt-1 h-4 w-4 shrink-0 accent-[#794525] focus:ring-[#9a572e]"
+          onChange={(event) => {
+            setHasConsented(event.target.checked);
+            setMessage(null);
+          }}
+          required
+          type="checkbox"
+        />
+        <span>
+          Я согласен на обработку персональных данных.{" "}
+          <a
+            className="font-semibold text-[#794525] underline decoration-[#b98b51] underline-offset-2 hover:text-[#9a572e]"
+            href="/privacy"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Политика обработки персональных данных
+          </a>
+        </span>
+      </label>
 
       {message && (
         <p

@@ -240,7 +240,17 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-[#9b7447]/30 px-6 py-7 text-center text-xs uppercase tracking-[0.16em] text-[#aa9272]">
-        Цифровой фронтир · Ищи честно. Сообщай ответственно.
+        <p>Цифровой фронтир · Ищи честно. Сообщай ответственно.</p>
+        <p className="mx-auto mt-3 max-w-2xl normal-case leading-6 tracking-normal text-[#c6b69d]">
+          Это тестовая версия платформы. Администрация не несёт
+          ответственности за действия пользователей.
+        </p>
+        <a
+          className="mt-3 inline-block text-[#d5a55e] underline decoration-[#a77d4c] underline-offset-4 transition hover:text-[#f4e8d0]"
+          href="/privacy"
+        >
+          Политика обработки персональных данных
+        </a>
       </footer>
     </main>
   );
