@@ -59,7 +59,7 @@ export default function LeadForm() {
     try {
       const { error } = await supabase.from("client_leads").insert({
         company_name: form.companyName.trim(),
-        email: form.email.trim(),
+        contact_email: form.email.trim(),
         website: normalizeWebsite(form.website.trim()),
         budget_range: form.budget,
       });
