@@ -61,7 +61,7 @@ export default function LeadForm() {
         company_name: form.companyName.trim(),
         email: form.email.trim(),
         website: normalizeWebsite(form.website.trim()),
-        budget: form.budget,
+        budget_range: form.budget,
       });
 
       if (error) {
